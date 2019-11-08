@@ -1,0 +1,130 @@
+* {}
+
+a {
+    color: black;
+    text-decoration: none !important;
+    background: transparent !important;
+}
+
+a:hover {
+    color: black !important;
+}
+
+a,
+button {
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+.banner {
+    background-color: #E24625 !important;
+    height: 70px;
+}
+
+.banner a {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+.banner img {
+    width: 6%;
+    padding-top: 25px;
+    margin-left: 40px;
+}
+
+.btn-primary {
+    background-color: #E24625 !important;
+    border-color: #E24625 !important;
+    padding: 10px 35px;
+}
+
+.card {
+    background-color: #E24625 !important;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    height: 100px;
+}
+
+.card-body {
+    padding: 0 !important;
+    width: 100%;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.container {
+    padding-top: 80px !important;
+    padding-bottom: 300px;
+}
+
+.footer-social i {
+    color: white;
+    font-size: 18px;
+    padding: 15px 3px;
+}
+
+
+
+.pizza-banner img {
+    width: 100%;
+}
+
+.rollover-underline-black {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.rollover-underline-black:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.rollover-underline-black:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#result {
+    display: none;
+}
+
+@media screen and (max-width: 880px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .banner img {
+        width: 12%;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .glasses img {
+        width: 10%;
+    }
+
+}

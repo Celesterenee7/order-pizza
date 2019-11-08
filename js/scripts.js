@@ -36,4 +36,6 @@ $(document).ready(function () {
         let myPizza = new Pizza(sizeRequest, topArray)
         let price = myPizza.getPrice();
     })
+
+    //-------------- jQuery Dom Magic Goes Here ------------------
 });
