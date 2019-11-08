@@ -40,7 +40,9 @@ button {
 .btn-primary {
     background-color: #E24625 !important;
     border-color: #E24625 !important;
-    padding: 10px 35px;
+    padding: 15px 45px;
+    font-size: 15px;
+    letter-spacing: 4px;
 }
 
 .card {
@@ -66,13 +68,20 @@ button {
     padding-bottom: 100px;
 }
 
+.container,
+h1 {
+    font-size: 35px;
+}
+
 .footer-social i {
     color: white;
     font-size: 18px;
     padding: 15px 3px;
 }
 
-
+.form-check-label {
+    font-size: 16px;
+}
 
 .pizza-banner img {
     width: 100%;
