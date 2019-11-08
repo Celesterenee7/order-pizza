@@ -10,8 +10,21 @@ Pizza.prototype.addAnswer = function () {
         this.price += 10
     } else if (this.size === 2) {
         this.price += 20
-    } else if (this.size === 3) {
+    } else {
         this.price += 30
+    }
+    if (this.veggie === 1) {
+        this.price += 2
+    } else if (this.veggie === 2) {
+        this.price += 2
+    } else if (this.veggie === 3) {
+        this.price += 2
+    } else if (this.veggie === 4) {
+        this.price += 2
+    } else if (this.veggie === 5) {
+        this.price += 2
+    } else {
+        this.price += 2
     }
 
 }
