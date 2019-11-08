@@ -7,42 +7,33 @@ function Pizza(size, veggies) {
 }
 
 Pizza.prototype.getPrice = function () {
-    this.veggies.forEach(function (veggie) {
-        this.price += 2;
-        if (this.size === 20) {
-            this.price += 30;
-        } else if (this.size === 16) {
-            this.price += 20;
-        } else if (this.size === 12) {
-            this.price += 10;
-        }
-        console.log(this.price);
+    if (this.size === 20) {
+        this.price += 30;
+    } else if (this.size === 16) {
+        this.price += 20;
+    } else if (this.size === 12) {
+        this.price += 10;
+    }
 
-        return this.price;
-    })
+    return this.price;
 }
+
+var Pizza = new Pizza();
 
 //Front-end Logic Goes Here:
 
 $(document).ready(function () {
     $("form#pizza-pizza").submit(function (event) {
         event.preventDefault();
-        let vegArray = [];
-        let sizeInput = $("input:radio[name=size]:checked").val();
-        let veggiesInputs = $("input:radio[name=veggies]:checked").val();
+        var sizeInput = parseInt($("input:radio[name=size]:checked").val());
+        var veggiesInput = parseInt($("input:radio[name=veggies]:checked").val());
+        var pizza  = new Ticket (inputMovie, inputAge, inputTime);
+        pizza.getPrice();
+        console.log(pizza.Price);
 
-        veggiesInputs.forEach(function (vegInput) {
-            vegArray.push(vegInput.val());
-            console.log(vegArray);
-        });
+        $("#output").text(pizza.Price);
 
-        let myPizza = new myPizza(sizeInput, vegArray);
-        console.log(vegArray);
-        let pizzaPrice = myPizza.getPrice();
-
-        $("#output").text(pizzaPrice);
-
-    })
+    });
 });
 
 //-------------- jQuery Dom Magic Goes Here ------------------
