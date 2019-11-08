@@ -27,5 +27,7 @@ Pizza.prototype.getPrice = function () {
 $(document).ready(function () {
     $("#SubmitBtn").submit(function (e) {
         e.preventDefault;
+        let toppingsInputs = $("#toppings:checked");
+        let topArray [];
     })
 });
