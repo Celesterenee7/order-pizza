@@ -1,6 +1,6 @@
 //Backend Logic:
 function Pizza(size, veggies) {
-    this.movie = size,
+        this.size = size,
         this.veggies = veggies,
         this.price = 0
 }
