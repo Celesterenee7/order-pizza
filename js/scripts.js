@@ -21,3 +21,11 @@ Pizza.prototype.getPrice = function () {
         return this.price;
     })
 }
+
+//Front-end Logic Goes Here:
+
+$(document).ready(function () {
+    $("#SubmitBtn").submit(function (e) {
+        e.preventDefault;
+    })
+});
