@@ -1,9 +1,9 @@
 //Back-end Logic Goes Here:
 
 function Pizza(size, veggies) {
-    this.size = size;
-    this.veggies = veggies;
-    this.price = 0;
+    this.size = size,
+        this.veggies = veggies,
+        this.price = 0
 }
 
 Pizza.prototype.getPrice = function () {
@@ -25,19 +25,24 @@ Pizza.prototype.getPrice = function () {
 //Front-end Logic Goes Here:
 
 $(document).ready(function () {
-    $("form#formInput").submit(function (e) {
-        e.preventDefault;
-        let veggiesRequests = $("input:radio[name=pizzaVeggies]:checked").val();
+    $("form#pizza-pizza").submit(function (event) {
+        event.preventDefault();
         let vegArray = [];
-        let sizeRequest = $("#inout:radio[name=pizzaSize]:checked").val()
-        veggiesRequests.forEach(function (vegRequest) {
-            vegArray.push(vegRequest.val());
+        let sizeInput = $("input:radio[name=size]:checked").val();
+        let veggiesInputs = $("input:radio[name=veggies]:checked").val();
+
+        veggiesInputs.forEach(function (vegInput) {
+            vegArray.push(vegInput.val());
+            console.log(vegArray);
         });
-        let myPizza = new Pizza(sizeRequest, vegArray);
-        let price = myPizza.getPrice();
+
+        let myPizza = new myPizza(sizeInput, vegArray);
+        console.log(vegArray);
+        let pizzaPrice = myPizza.getPrice();
+
+        $("#output").text(pizzaPrice);
+
     })
-
-
 });
 
 //-------------- jQuery Dom Magic Goes Here ------------------
