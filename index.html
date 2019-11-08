@@ -14,7 +14,6 @@
 <title>Renees Pizza</title>
 
 <body>
-    </div>
     <div class="banner">
         <a class="rollover-underline-black" href="#">Renees Pizza</a>
     </div>
@@ -33,15 +32,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option1" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaSize" type="radio" value="1">
                         <label class="form-check-label">12"</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option1" type="radio" value="2">
+                        <input class="form-check-input" name="pizzaSize" type="radio" value="2">
                         <label class="form-check-label">16"</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option1" type="radio" value="3">
+                        <input class="form-check-input" name="pizzaSize" type="radio" value="3">
                         <label class="form-check-label">20"</label>
                     </div>
                 </div>
@@ -55,63 +54,63 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="2">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="2">
                         <label class="form-check-label">Onion</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="3">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="3">
                         <label class="form-check-label">Tomato</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Black Olives</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Mushrooms</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Roasted Garlic</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Green Peppers</label>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="2">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="2">
                         <label class="form-check-label">Spinach</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="3">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="3">
                         <label class="form-check-label">Jalapenos</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Mozzarella</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Feta</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Patmesan Cheese</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="option2" type="radio" value="1">
+                        <input class="form-check-input" name="pizzaVeggies" type="radio" value="1">
                         <label class="form-check-label">Ricotta</label>
                     </div>
                 </div>
             </div>
             <br>
-            <button type="submit" name="button" class="btn btn-primary">ORDER NOW!</button>
+            <button id="submitBtn" type="submit" name="button" class="btn btn-primary">ORDER NOW!</button>
         </form>
         <br>
-        <div id="result">
-            <p id="final-result"></p>
+        <div class="output">
+            <h2 id="output"></h2>
         </div>
     </div>
     <div class="card">
