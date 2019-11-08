@@ -1,19 +1,18 @@
 //Backend Logic:
 function Pizza(size, veggies) {
-        this.size = size,
+    this.size = size,
         this.veggies = veggies,
         this.price = 0
 }
 
 Pizza.prototype.addAnswer = function () {
-    if (this.size === 20) {
-        this.price += 30
-    } else if (this.size === 16) {
-        this.price += 20
-    } else if (this.size === 12) {
+    if (this.size === 1) {
         this.price += 10
+    } else if (this.size === 2) {
+        this.price += 20
+    } else if (this.size === 3) {
+        this.price += 30
     }
-    return this.price;
 
 }
 
