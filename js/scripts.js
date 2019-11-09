@@ -21,23 +21,13 @@ Pizza.prototype.pizzaSelections = function () {
     } else {
         this.price += 3
     }
-    if (this.veggie === 1) {
-        this.price += 2
-    } else if (this.veggie === 2) {
-        this.price += 2
-    } else if (this.veggie === 3) {
-        this.price += 2
-    } else if (this.veggie === 4) {
-        this.price += 2
-    } else if (this.veggie === 5) {
-        this.price += 2
-    } else {
-        this.price += 2
-    }
+    for (var i = 0; i < this.veggies.length; i++) {
+        this.price += 2;
+    };
 
+    console.log(this.price);
+    return this.price;
 }
-
-var pizza = new Pizza();
 
 
 //Front end logic:
@@ -46,8 +36,14 @@ $(document).ready(function () {
         event.preventDefault();
         var inputSize = parseInt($("input:radio[name=size]:checked").val());
         var inputCrust = parseInt($("input:radio[name=crust]:checked").val());
-        var inputVeggies = parseInt($("input:radio[name=veggies]:checked").val());
-        var pizza = new Pizza(inputSize, inputCrust, inputVeggies);
+        var vegArray = [];
+
+        $("input:checkbox[name=veggies]:checked").map(function () {
+            var veggies = parseInt($("input:checkbox[name=veggies]:checked").val());
+            vegArray.push(veggies);
+        });
+
+        var pizza = new Pizza(inputSize, inputCrust, vegArray);
         pizza.pizzaSelections();
         console.log(pizza.price);
 
