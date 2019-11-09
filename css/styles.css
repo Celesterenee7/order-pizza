@@ -84,7 +84,9 @@ h1 {
 .footer-social i {
     color: white;
     font-size: 18px;
-    padding: 15px 3px;
+    padding-top: 25px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 .form-check-label {
