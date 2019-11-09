@@ -1,6 +1,6 @@
 //Backend Logic:
 function Pizza(size, crust, veggies) {
-    this.size = size,
+        this.size = size,
         this.crust = crust,
         this.veggies = veggies,
         this.price = 0
@@ -11,15 +11,19 @@ Pizza.prototype.pizzaSelections = function () {
         this.price += 10
     } else if (this.size === 2) {
         this.price += 20
-    } else {
+    } else if (this.size === 3) {
         this.price += 30
+    } else {
+        this.price += 0
     }
     if (this.crust === 1) {
         this.price += 1
     } else if (this.crust === 2) {
         this.price += 2
-    } else {
+    } else if (this.crust === 3) {
         this.price += 3
+    } else {
+        this.price += 0
     }
     for (var i = 0; i < this.veggies.length; i++) {
         this.price += 2;
@@ -45,9 +49,9 @@ $(document).ready(function () {
 
         var pizza = new Pizza(inputSize, inputCrust, vegArray);
         pizza.pizzaSelections();
-        console.log(pizza.price);
 
-        $("#output").html("Your pizza will cost $" + pizza.price);
+
+        $("#output").text("Your pizza will cost $" + pizza.price);
 
     });
 });

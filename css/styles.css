@@ -1,4 +1,6 @@
-* {}
+* {
+    font-family: 'Lato', sans-serif;
+}
 
 a {
     color: black;
@@ -16,6 +18,12 @@ button {
     transition: all 0.3s ease-in-out !important;
 }
 
+h2 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: 600;
+}
 
 .banner {
     background-color: #E24625 !important;
@@ -80,7 +88,7 @@ h1 {
 }
 
 .form-check-label {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .pizza-banner img {
@@ -114,10 +122,6 @@ h1 {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#result {
-    display: none;
-}
-
 @media screen and (max-width: 880px) {
 
     ::-webkit-scrollbar {
@@ -130,10 +134,6 @@ h1 {
 
     .card-body {
         width: 100%;
-    }
-
-    .glasses img {
-        width: 10%;
     }
 
 }
