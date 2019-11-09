@@ -1,6 +1,6 @@
 //Backend Logic:
 function Pizza(size, crust, veggies) {
-        this.size = size,
+    this.size = size,
         this.crust = crust,
         this.veggies = veggies,
         this.price = 0
@@ -38,8 +38,8 @@ Pizza.prototype.pizzaSelections = function () {
 $(document).ready(function () {
     $("form#formInput").submit(function (event) {
         event.preventDefault();
-        var inputSize = parseInt($("input:radio[name=size]:checked").val());
-        var inputCrust = parseInt($("input:radio[name=crust]:checked").val());
+        var pizzaSize = parseInt($("input:radio[name=size]:checked").val());
+        var pizzaCrust = parseInt($("input:radio[name=crust]:checked").val());
         var vegArray = [];
 
         $("input:checkbox[name=veggies]:checked").map(function () {
@@ -47,11 +47,11 @@ $(document).ready(function () {
             vegArray.push(veggies);
         });
 
-        var pizza = new Pizza(inputSize, inputCrust, vegArray);
+        var pizza = new Pizza(pizzaSize, pizzaCrust, vegArray);
         pizza.pizzaSelections();
 
 
-        $("#output").text("Your pizza will cost $" + pizza.price);
+        $("#pizzaCost").text("Your pizza will cost $" + pizza.price + "!");
 
     });
 });

@@ -91,6 +91,20 @@ h1 {
     font-size: 14px;
 }
 
+.form-check-inline .form-check-input {
+    margin-right: 10px;
+}
+
+.glasses {
+    text-align: center;
+}
+
+.glasses img {
+    width: 3%;
+    border-radius: 50%;
+    display: inline !important;
+}
+
 .pizza-banner img {
     width: 100%;
 }
