@@ -3,11 +3,13 @@
 #### By Celeste Renee Morton
 ## Description
 This application is a website for a pizza company and will allow a user to choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
-* This application will use an object constructor with properties for toppings and size.
-* It will also use a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+* This application will use an object constructor with properties for size, crust, and toppings.
+* It will also use a prototype method for the cost of a pizza depending on the selections chosen.
+* It will allow the user to make a custom pizza based off of these selections and see the total price at the end.
 ## Specifications
-* The user can choose toppings and a size for the pizza they'd like to order.
+* The user can choose a size, type of crust, and toppings for the pizza they'd like to order.
 * The user can input these selections within a form that gathers data.
+* The user can select multiple toppings for their pizza.
 * Based off of these selections, the application will calculate a price for the user.
 * Once the price is calculated, the application will show an output of the price owed for the pizza.
 ## Setup/Installation Requirements
