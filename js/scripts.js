@@ -29,7 +29,6 @@ Pizza.prototype.pizzaSelections = function () {
         this.price += 2;
     };
 
-    console.log(this.price);
     return this.price;
 }
 
