@@ -63,6 +63,9 @@ h2 {
 }
 
 .card-body {
+    position: absolute;
+    height: 100px;
+    background-color: #E24625;
     padding: 0 !important;
     width: 100%;
 }
@@ -97,15 +100,6 @@ h1 {
     margin-right: 10px;
 }
 
-.glasses {
-    text-align: center;
-}
-
-.glasses img {
-    width: 3%;
-    border-radius: 50%;
-    display: inline !important;
-}
 
 .pizza-banner img {
     width: 100%;
